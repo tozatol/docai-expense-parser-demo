@@ -26,6 +26,11 @@
     },
     {
       "mode": "NULLABLE",
+      "name": "concepto",
+      "type": "INTEGER"
+    },
+    {
+      "mode": "NULLABLE",
       "name": "exequatur",
       "type": "STRING"
     }
