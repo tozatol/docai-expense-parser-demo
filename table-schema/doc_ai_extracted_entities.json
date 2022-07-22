@@ -1,83 +1,33 @@
 [
     {
       "mode": "NULLABLE",
-      "name": "RD",
+      "name": "provedor",
       "type": "STRING"
-    },
-    {
-      "mode": "NULLABLE",
-      "name": "end_date",
-      "type": "DATE"
-    },    
-    {
-      "mode": "NULLABLE",
-      "name": "suma",
-      "type": "STRING"
-    },
-    {
-        "mode": "NULLABLE",
-        "name": "purchase_time",
-        "type": "STRING"
     },
     {
       "mode": "NULLABLE",
       "name": "fecha",
       "type": "DATE"
-    },
-    {
-      "mode": "NULLABLE",
-      "name": "start_date",
-      "type": "DATE"
-    },
-    {
-      "mode": "NULLABLE",
-      "name": "supplier_address",
-      "type": "STRING"
     },    
     {
       "mode": "NULLABLE",
-      "name": "supplier_city",
-      "type": "STRING"
-    },
-    {
-      "mode": "NULLABLE",
-      "name": "supplier_name",
+      "name": "recibido",
       "type": "STRING"
     },
     {
         "mode": "NULLABLE",
-        "name": "tip_amount",
+        "name": "suma",
         "type": "STRING"
     },
     {
       "mode": "NULLABLE",
-      "name": "total_amount",
-      "type": "STRING"
+      "name": "RD",
+      "type": "INTEGER"
     },
     {
       "mode": "NULLABLE",
-      "name": "total_tax_amount",
+      "name": "exequatur",
       "type": "STRING"
-    },
-    {
-      "mode": "NULLABLE",
-      "name": "line_item",
-      "type": "STRING"
-    },
-    {
-        "mode": "NULLABLE",
-        "name": "line_item_amount",
-        "type": "STRING"
-      },    
-    {
-        "mode": "NULLABLE",
-        "name": "concepto",
-        "type": "STRING"
-    },    
-    {
-        "mode": "NULLABLE",
-        "name": "line_item_product_code",
-        "type": "STRING"
     }
   ]
   
