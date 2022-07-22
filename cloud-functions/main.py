@@ -44,22 +44,13 @@ def write_to_bq(dataset_name, table_name, entities_extracted_dict):
   
    job_config = bigquery.LoadJobConfig(source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON, ignore_unknown_values=True,
    schema=[
-        bigquery.SchemaField("currency", "STRING"),
-        bigquery.SchemaField("end_date", "DATE"),
-        bigquery.SchemaField("net_amount", "STRING"),
-        bigquery.SchemaField("purchase_time", "STRING"),
-        bigquery.SchemaField("receipt_date", "DATE"),
-        bigquery.SchemaField("start_date", "DATE"),
-        bigquery.SchemaField("supplier_address", "STRING"),
-        bigquery.SchemaField("supplier_city", "STRING"),
-        bigquery.SchemaField("supplier_name", "STRING"),
-        bigquery.SchemaField("tip_amount", "STRING"),
-        bigquery.SchemaField("total_amount", "STRING"),
-        bigquery.SchemaField("total_tax_amount", "STRING"),
-        bigquery.SchemaField("line_item", "STRING"),
-        bigquery.SchemaField("line_item_amount", "STRING"),
-        bigquery.SchemaField("line_item_description", "STRING"),
-        bigquery.SchemaField("line_item_product_code", "STRING")
+        bigquery.SchemaField("provedor", "STRING"),
+        bigquery.SchemaField("fecha", "DATE"),
+        bigquery.SchemaField("recibido", "STRING"),
+        bigquery.SchemaField("suma", "STRING"),
+        bigquery.SchemaField("RD", "INTEGER"),
+        bigquery.SchemaField("concepto", "STRING"),
+        bigquery.SchemaField("exequatur", "STRING")
     ])
  
    job = bq_client.load_table_from_json(json_object, table_ref, job_config=job_config)
